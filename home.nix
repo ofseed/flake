@@ -126,6 +126,9 @@
       theme = "Catppuccin-Mocha";
       settings = {
         shell = "fish";
+        remember_window_size = false;
+        initial_window_width = "100c";
+        initial_window_height = "45c";
       };
     };
   };
