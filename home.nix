@@ -82,6 +82,9 @@
       enable = true;
     };
 
+    zoxide = {
+      enable = true;
+    };
     lsd = {
       enable = true;
       enableAliases = true;
