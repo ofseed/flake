@@ -63,7 +63,8 @@
   #  /etc/profiles/per-user/ofseed/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
+    VISUAL = "nvim";
   };
 
   home.shellAliases = {
