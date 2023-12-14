@@ -116,5 +116,9 @@
         version = 1;
       };
     };
+
+    kitty = {
+      enable = true;
+    };
   };
 }
