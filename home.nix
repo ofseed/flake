@@ -92,6 +92,9 @@
     btop = {
       enable = true;
     };
+    fzf = {
+      enable = true;
+    };
     ripgrep = {
       enable = true;
     };
