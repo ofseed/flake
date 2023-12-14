@@ -123,6 +123,7 @@
         name = "Cascadia Code";
         package = pkgs.cascadia-code;
       };
+      theme = "Catppuccin-Mocha";
     };
   };
 }
