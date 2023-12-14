@@ -76,5 +76,9 @@
     starship = {
       enable = true;
     };
+
+    git = {
+      enable = true;
+    };
   };
 }
