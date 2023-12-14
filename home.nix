@@ -89,7 +89,7 @@
       enable = true;
       enableAliases = true;
     };
-    htop = {
+    btop = {
       enable = true;
     };
     ripgrep = {
