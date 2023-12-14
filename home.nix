@@ -82,6 +82,10 @@
       enable = true;
     };
 
+    lsd = {
+      enable = true;
+      enableAliases = true;
+    };
     ripgrep = {
       enable = true;
     };
