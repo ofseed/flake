@@ -85,6 +85,8 @@
         ci = "commit";
         st = "status";
       };
+      userEmail = "ofseed@foxmail.com";
+      userName = "Yi Ming";
     };
   };
 }
