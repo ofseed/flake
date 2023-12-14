@@ -89,6 +89,9 @@
       enable = true;
       enableAliases = true;
     };
+    htop = {
+      enable = true;
+    };
     ripgrep = {
       enable = true;
     };
