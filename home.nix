@@ -119,6 +119,10 @@
 
     kitty = {
       enable = true;
+      font = {
+        name = "Cascadia Code";
+        package = pkgs.cascadia-code;
+      };
     };
   };
 }
