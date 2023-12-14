@@ -87,6 +87,11 @@
       };
       userEmail = "ofseed@foxmail.com";
       userName = "Yi Ming";
+      extraConfig = {
+        init = {
+          defaultBranch = "main";
+        };
+      };
     };
   };
 }
