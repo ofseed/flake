@@ -82,6 +82,10 @@
       enable = true;
     };
 
+    ripgrep = {
+      enable = true;
+    };
+
     git = {
       enable = true;
       aliases = {
