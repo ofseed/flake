@@ -140,6 +140,9 @@
         version = 1;
       };
     };
+    lazygit = {
+      enable = true;
+    };
 
     mpv = {
       enable = true;
