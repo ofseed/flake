@@ -120,6 +120,9 @@
       };
     };
 
+    mpv = {
+      enable = true;
+    };
     kitty = {
       enable = true;
       font = {
