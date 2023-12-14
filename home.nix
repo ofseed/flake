@@ -124,6 +124,9 @@
         package = pkgs.cascadia-code;
       };
       theme = "Catppuccin-Mocha";
+      settings = {
+        shell = "fish";
+      };
     };
   };
 }
