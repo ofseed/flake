@@ -35,11 +35,14 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
 
+    # Fonts
     (nerdfonts.override {
       fonts = [
+        "CascadiaCode"
         "NerdFontsSymbolsOnly"
       ];
     })
+    cascadia-code
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -141,8 +144,7 @@
     kitty = {
       enable = true;
       font = {
-        name = "Cascadia Code";
-        package = pkgs.cascadia-code;
+        name = "CaskaydiaCove Nerd Font";
       };
       theme = "Catppuccin-Mocha";
       settings = {
