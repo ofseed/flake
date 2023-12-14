@@ -79,6 +79,12 @@
 
     git = {
       enable = true;
+      aliases = {
+        co = "checkout";
+        br = "branch";
+        ci = "commit";
+        st = "status";
+      };
     };
   };
 }
