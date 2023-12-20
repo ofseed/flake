@@ -1,5 +1,12 @@
 set ideajoin
 
+set hlsearch
+set ignorecase
+set incsearch
+set scrolloff=2
+set sidescrolloff=5
+set smartcase
+
 packadd matchit
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
