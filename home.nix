@@ -158,6 +158,9 @@
         version = 1;
       };
     };
+    gh-dash = {
+      enable = true;
+    };
     lazygit = {
       enable = true;
     };
