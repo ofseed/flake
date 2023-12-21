@@ -35,6 +35,9 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
 
+    # Programs
+    lazydocker
+
     # Fonts
     (nerdfonts.override {
       fonts = [
