@@ -166,9 +166,11 @@
     };
 
     mpv = {
+      package = pkgs.nix;
       enable = true;
     };
     kitty = {
+      package = pkgs.nix;
       enable = true;
       font = {
         name = "CaskaydiaCove Nerd Font";
