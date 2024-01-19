@@ -174,6 +174,7 @@
       enable = true;
       settings = {
         gui = {
+          nerdFontsVersion = "3";
           border = "rounded";
         };
         git = {
