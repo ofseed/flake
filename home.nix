@@ -173,6 +173,9 @@
     lazygit = {
       enable = true;
       settings = {
+        gui = {
+          border = "rounded";
+        };
         git = {
           paging = {
             colorArg = "always";
