@@ -106,6 +106,9 @@
     zoxide = {
       enable = true;
     };
+    bat = {
+      enable = true;
+    };
     lsd = {
       enable = true;
       enableAliases = true;
