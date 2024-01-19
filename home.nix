@@ -153,6 +153,9 @@
           defaultBranch = "main";
         };
       };
+      delta = {
+        enable = true;
+      };
     };
     gh = {
       enable = true;
@@ -166,6 +169,14 @@
     };
     lazygit = {
       enable = true;
+      settings = {
+        git = {
+          paging = {
+            colorArg = "always";
+            pager = "delta --dark --paging=never";
+          };
+        };
+      };
     };
 
     mpv = {
