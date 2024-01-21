@@ -119,6 +119,9 @@
         vim_keys = true;
       };
     };
+    htop = {
+      enable = true;
+    };
     fzf = {
       enable = true;
       colors = {
