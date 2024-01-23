@@ -101,6 +101,7 @@
     };
     starship = {
       enable = true;
+      settings = builtins.fromTOML (builtins.readFile ./dotfiles/config/starship.toml);
     };
 
     zoxide = {
