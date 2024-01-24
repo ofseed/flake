@@ -116,6 +116,9 @@
     bat = {
       enable = true;
     };
+    lf = {
+      enable = true;
+    };
     lsd = {
       enable = true;
       enableAliases = true;
