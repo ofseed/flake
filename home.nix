@@ -84,6 +84,8 @@
   home.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
+
+    PATH = "$PATH:$HOME/neovim/bin";
   };
 
   home.shellAliases = {
