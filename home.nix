@@ -39,6 +39,9 @@
     unixtools.xxd
     lazydocker
 
+    # Libraries
+    luajitPackages.magick
+
     # Fonts
     (nerdfonts.override {
       fonts = [
