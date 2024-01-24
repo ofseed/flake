@@ -36,6 +36,7 @@
     # '')
 
     # Programs
+    unixtools.xxd
     lazydocker
 
     # Fonts
