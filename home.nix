@@ -133,6 +133,7 @@
     };
     lf = {
       enable = true;
+      extraConfig = builtins.readFile ./dotfiles/config/lf/lfrc;
     };
     lsd = {
       enable = true;
