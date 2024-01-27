@@ -70,6 +70,7 @@
     # '';
 
     ".ideavimrc".source = dotfiles/ideavimrc;
+    ".config/lf/icons".source = dotfiles/config/lf/icons;
   };
 
   # Home Manager can also manage your environment variables through
