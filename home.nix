@@ -50,6 +50,8 @@
       ];
     })
     cascadia-code
+    noto-fonts
+    noto-fonts-cjk
     noto-fonts-color-emoji
   ];
 
