@@ -72,6 +72,7 @@
     ".ideavimrc".source = dotfiles/ideavimrc;
     ".config/lf/icons".source = dotfiles/config/lf/icons;
     ".config/fish/functions/lfcd.fish".source = dotfiles/config/fish/functions/lfcd.fish;
+    ".config/mpv".source = dotfiles/config/mpv;
   };
 
   # Home Manager can also manage your environment variables through
