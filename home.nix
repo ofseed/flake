@@ -235,5 +235,10 @@
       theme = "Catppuccin-Mocha";
       extraConfig = builtins.readFile ./dotfiles/config/kitty/kitty.conf;
     };
+    wezterm = {
+      enable = true;
+      package = pkgs.nix;
+      extraConfig = builtins.readFile ./dotfiles/config/wezterm/wezterm.lua;
+    };
   };
 }
