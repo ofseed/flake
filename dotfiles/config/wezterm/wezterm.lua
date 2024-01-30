@@ -2,7 +2,10 @@ local wezterm = require "wezterm"
 
 local config = {
   color_scheme = "Catppuccin Mocha",
-  font = wezterm.font "CaskaydiaCove Nerd Font",
+  font = wezterm.font {
+    family = "CaskaydiaCove Nerd Font",
+    harfbuzz_features = { "calt", "ss01", "ss02" },
+  },
   initial_cols = 100,
   initial_rows = 45,
   window_background_opacity = 0.7,
