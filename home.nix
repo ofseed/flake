@@ -70,6 +70,7 @@
     # '';
 
     ".ideavimrc".source = dotfiles/ideavimrc;
+    ".terminfo".source = dotfiles/terminfo;
     ".config/lf/icons".source = dotfiles/config/lf/icons;
     ".config/fish/functions/lfcd.fish".source = dotfiles/config/fish/functions/lfcd.fish;
     ".config/mpv".source = dotfiles/config/mpv;

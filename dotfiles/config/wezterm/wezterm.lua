@@ -2,6 +2,8 @@ local wezterm = require "wezterm"
 
 -- Cross-platform configuration
 local common_config = {
+  term = "wezterm",
+
   color_scheme = "Catppuccin Mocha",
 
   font = wezterm.font {
