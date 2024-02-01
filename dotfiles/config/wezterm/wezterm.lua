@@ -29,7 +29,14 @@ end
 
 local windows_config = {
   wsl_domains = wsl_domains,
-  default_domain = "WSL:NixOS",
+  ssh_domains = {
+    {
+      name = "wsl",
+      remote_address = "127.0.0.1",
+      username = "ofseed",
+    },
+  },
+  default_domain = "wsl",
   win32_system_backdrop = "Acrylic",
 }
 
