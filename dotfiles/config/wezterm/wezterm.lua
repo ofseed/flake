@@ -1,5 +1,6 @@
 local wezterm = require "wezterm"
 
+-- Cross-platform configuration
 local common_config = {
   color_scheme = "Catppuccin Mocha",
 
@@ -22,11 +23,11 @@ local common_config = {
 }
 
 local wsl_domains = wezterm.default_wsl_domains()
-
 for _, domains in ipairs(wsl_domains) do
   domains.default_prog = common_config.default_prog
 end
 
+-- Windows-specific configuration
 local windows_config = {
   wsl_domains = wsl_domains,
   ssh_domains = {
@@ -40,6 +41,7 @@ local windows_config = {
   win32_system_backdrop = "Acrylic",
 }
 
+-- Merge the configurations
 local config = wezterm.config_builder()
 
 for k, v in pairs(common_config) do
