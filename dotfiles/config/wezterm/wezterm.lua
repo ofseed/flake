@@ -4,15 +4,21 @@ local wezterm = require "wezterm"
 local common_config = {
   term = "wezterm",
 
+  -- Colors
   color_scheme = "Catppuccin Mocha",
 
+  -- Font
   font = wezterm.font {
     family = "CaskaydiaCove Nerd Font",
     harfbuzz_features = { "calt", "ss01", "ss02" },
   },
 
+  -- Spawn
+  default_prog = { "/home/ofseed/.nix-profile/bin/fish" },
   initial_cols = 100,
   initial_rows = 45,
+
+  --  Appearance
   window_background_opacity = 0.7,
   window_padding = {
     left = "0cell",
@@ -20,8 +26,6 @@ local common_config = {
     top = "0cell",
     bottom = "0cell",
   },
-
-  default_prog = { "/home/ofseed/.nix-profile/bin/fish" },
 }
 
 local wsl_domains = wezterm.default_wsl_domains()
