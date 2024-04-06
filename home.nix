@@ -141,9 +141,11 @@
       enable = true;
       extraConfig = builtins.readFile ./dotfiles/config/lf/lfrc;
     };
-    lsd = {
+    eza = {
       enable = true;
       enableAliases = true;
+      icons = true;
+      git = true;
     };
     btop = {
       enable = true;
