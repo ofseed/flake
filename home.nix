@@ -192,6 +192,9 @@
         init = {
           defaultBranch = "main";
         };
+        push = {
+          autoSetupRemote = true;
+        };
       };
       delta = {
         enable = true;
