@@ -226,6 +226,7 @@
             pager = "delta --dark --paging=never";
           };
         };
+        promptToReturnFromSubprocess = false;
       };
     };
 
