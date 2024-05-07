@@ -122,20 +122,7 @@
     };
     bat = {
       enable = true;
-      config = {
-        theme = "catppuccin";
-      };
-      themes = {
-        catppuccin = {
-          src = pkgs.fetchFromGitHub {
-            owner = "catppuccin";
-            repo = "bat";
-            rev = "ba4d16880d63e656acced2b7d4e034e4a93f74b1";
-            sha256 = "sha256-6WVKQErGdaqb++oaXnY3i6/GuH2FhTgK0v4TN4Y0Wbw=";
-          };
-          file = "Catppuccin-mocha.tmTheme";
-        };
-      };
+      catppuccin.enable = true;
     };
     lf = {
       enable = true;
@@ -157,21 +144,7 @@
     };
     fzf = {
       enable = true;
-      colors = {
-        # Catppuccin
-        "bg+"="#313244";
-        bg="#1e1e2e";
-        spinner="#f5e0dc";
-        hl="#f38ba8";
-        fg="#cdd6f4";
-        header="#f38ba8";
-        info="#cba6f7";
-        pointer="#f5e0dc";
-        marker="#f5e0dc";
-        "fg+"="#cdd6f4";
-        prompt="#cba6f7";
-        "hl+"="#f38ba8";
-      };
+      catppuccin.enable = true;
     };
     ripgrep = {
       enable = true;
@@ -235,11 +208,11 @@
     };
     kitty = {
       package = pkgs.nix;
+      catppuccin.enable = true;
       enable = true;
       font = {
         name = "CaskaydiaCove Nerd Font";
       };
-      theme = "Catppuccin-Mocha";
       extraConfig = builtins.readFile ./dotfiles/config/kitty/kitty.conf;
     };
     wezterm = {
