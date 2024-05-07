@@ -114,6 +114,7 @@
     };
     starship = {
       enable = true;
+      catppuccin.enable = true;
       settings = builtins.fromTOML (builtins.readFile ./dotfiles/config/starship.toml);
     };
 
@@ -170,6 +171,7 @@
       };
       delta = {
         enable = true;
+        catppuccin.enable = true;
         options = {
           syntax-theme = "catppuccin";
         };
@@ -184,9 +186,11 @@
     };
     gh-dash = {
       enable = true;
+      catppuccin.enable = true;
     };
     lazygit = {
       enable = true;
+      catppuccin.enable = true;
       settings = {
         gui = {
           nerdFontsVersion = "3";
