@@ -211,7 +211,7 @@
       catppuccin.enable = true;
       enable = true;
       font = {
-        name = "CaskaydiaCove Nerd Font";
+        name = "Cascadia Code";
       };
       extraConfig = builtins.readFile ./dotfiles/config/kitty/kitty.conf;
     };
