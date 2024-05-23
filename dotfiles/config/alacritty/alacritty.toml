@@ -1,0 +1,8 @@
+shell = { program = "fish", args = ["--interactive"] }
+
+[window]
+dimensions = { columns = 100, lines = 45 }
+
+[font]
+normal = { family = "Cascadia Code NF" }
+builtin_box_drawing = true

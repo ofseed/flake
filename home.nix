@@ -220,5 +220,11 @@
       package = pkgs.nix;
       extraConfig = builtins.readFile ./dotfiles/config/wezterm/wezterm.lua;
     };
+    alacritty = {
+      enable = true;
+      catppuccin.enable = true;
+      package = pkgs.nix;
+      settings = builtins.fromTOML (builtins.readFile ./dotfiles/config/alacritty/alacritty.toml);
+    };
   };
 }
