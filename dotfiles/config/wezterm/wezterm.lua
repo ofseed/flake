@@ -10,7 +10,7 @@ local common_config = {
   -- Font
   font = wezterm.font {
     family = "CaskaydiaCove Nerd Font",
-    harfbuzz_features = { "calt", "ss01", "ss02" },
+    harfbuzz_features = { "ss02" },
   },
 
   -- Spawn
