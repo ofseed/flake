@@ -8,9 +8,16 @@ local common_config = {
   color_scheme = "Catppuccin Mocha",
 
   -- Font
-  font = wezterm.font {
-    family = "CaskaydiaCove Nerd Font",
-    harfbuzz_features = { "ss02" },
+  font = wezterm.font_with_fallback {
+    {
+      family = "Cascadia Code",
+      harfbuzz_features = { "ss02" },
+    },
+    "Symbols Nerd Font",
+    {
+      family = "Cascadia Code NF",
+      harfbuzz_features = { "ss02" },
+    },
   },
 
   -- Spawn
