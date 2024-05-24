@@ -2,6 +2,8 @@ shell = { program = "fish", args = ["--interactive"] }
 
 [window]
 dimensions = { columns = 100, lines = 45 }
+opacity = 0.8
+blur = true
 
 [font]
 normal = { family = "Cascadia Code NF" }
