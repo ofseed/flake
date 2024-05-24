@@ -117,7 +117,9 @@
       catppuccin.enable = true;
       settings = builtins.fromTOML (builtins.readFile ./dotfiles/config/starship.toml);
     };
-
+    atuin = {
+      enable = true;
+    };
     zoxide = {
       enable = true;
     };
