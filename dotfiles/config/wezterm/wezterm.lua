@@ -19,6 +19,8 @@ local common_config = {
       harfbuzz_features = { "ss02" },
     },
   },
+  underline_position = "200%",
+  underline_thickness = "200%",
 
   -- Spawn
   default_prog = { "/home/ofseed/.nix-profile/bin/fish" },
