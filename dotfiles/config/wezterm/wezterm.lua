@@ -18,6 +18,7 @@ local common_config = {
       family = "Cascadia Code NF",
       harfbuzz_features = { "ss02" },
     },
+    "Noto Sans CJK SC",
   },
   underline_position = "200%",
   underline_thickness = "200%",
