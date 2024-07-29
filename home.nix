@@ -96,6 +96,7 @@
 
   home.shellAliases = {
     hm = "home-manager";
+    pn = "pnpm";
   };
 
   fonts = {
