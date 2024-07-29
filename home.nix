@@ -36,6 +36,8 @@
     # '')
 
     # Programs
+    nixd
+    nixfmt-rfc-style
     unixtools.xxd
     lazydocker
 
