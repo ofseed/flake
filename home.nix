@@ -156,6 +156,9 @@
     ripgrep = {
       enable = true;
     };
+    jq = {
+      enable = true;
+    };
 
     git = {
       enable = true;
