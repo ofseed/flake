@@ -13,7 +13,7 @@ local common_config = {
       family = "Cascadia Code",
       harfbuzz_features = { "ss02" },
     },
-    "Symbols Nerd Font",
+    "Symbols Nerd Font Mono",
     {
       family = "Cascadia Code NF",
       harfbuzz_features = { "ss02" },
