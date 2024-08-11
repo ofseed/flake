@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -231,4 +236,8 @@
       settings = builtins.fromTOML (builtins.readFile ./dotfiles/config/alacritty/alacritty.toml);
     };
   };
+
+  xdg.configFile."git/config".text = lib.mkAfter (
+    builtins.readFile ./dotfiles/config/git/git-pickaxe-aliases.gitconfig
+  );
 }

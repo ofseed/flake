@@ -1,0 +1,15 @@
+# vim: filetype=gitconfig
+# From https://gist.github.com/phil-blain/2a1cf81a0030001d33158e44a35ceda6
+[alias]
+    # git log -p -S
+    log-pickaxe-s  = "!f() { : git log ; for arg; do [ \"${arg}\" = \"--pickaxe-regex\" ] && export PICKAXE_REGEX=1; done; GREPDIFF_REGEX=\"$1\" git -C \"${GIT_PREFIX}\" --work-tree=$PWD -c diff.external=pickaxe-diff log  -p --ext-diff -S \"$@\"; }; f"
+    # git show -S
+    show-pickaxe-s = "!f() { : git show; for arg; do [ \"${arg}\" = \"--pickaxe-regex\" ] && export PICKAXE_REGEX=1; done; GREPDIFF_REGEX=\"$1\" git -C \"${GIT_PREFIX}\" --work-tree=$PWD -c diff.external=pickaxe-diff show -p --ext-diff -S \"$@\"; }; f"
+    # git diff -S
+    diff-pickaxe-s = "!f() { : git diff; for arg; do [ \"${arg}\" = \"--pickaxe-regex\" ] && export PICKAXE_REGEX=1; done; GREPDIFF_REGEX=\"$1\" git -C \"${GIT_PREFIX}\" --work-tree=$PWD -c diff.external=pickaxe-diff diff -p -S \"$@\"; }; f"
+    # git log -p -G
+    log-pickaxe-g  = "!f() { : git log;  GREPDIFF_REGEX=\"$1\" PICKAXE_REGEX=1 git -C \"${GIT_PREFIX}\" --work-tree=$PWD -c diff.external=pickaxe-diff log  -p --ext-diff -G \"$@\"; }; f"
+    # git show -G
+    show-pickaxe-g = "!f() { : git show; GREPDIFF_REGEX=\"$1\" PICKAXE_REGEX=1 git -C \"${GIT_PREFIX}\" --work-tree=$PWD -c diff.external=pickaxe-diff show -p --ext-diff -G \"$@\"; }; f"
+    # git diff -G
+    diff-pickaxe-g = "!f() { : git diff; GREPDIFF_REGEX=\"$1\" PICKAXE_REGEX=1 git -C \"${GIT_PREFIX}\" --work-tree=$PWD -c diff.external=pickaxe-diff diff -p -G \"$@\"; }; f"
