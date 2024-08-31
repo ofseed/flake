@@ -38,4 +38,20 @@
       ];
     };
   };
+
+  environment = {
+    systemPackages = with pkgs; [
+      luajit
+      luajitPackages.luarocks
+    ];
+  };
+
+  programs = {
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+      vimAlias = true;
+      viAlias = true;
+    };
+  };
 }
