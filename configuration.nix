@@ -58,8 +58,17 @@
 
   environment = {
     systemPackages = with pkgs; [
+      # Toolchains
       luajit
       luajitPackages.luarocks
+      nodejs
+      corepack
+      python3
+      go
+      rustup
+      zig
+
+      # GUI
       adwaita-icon-theme
       ghostty.packages.x86_64-linux.default
       mpv
