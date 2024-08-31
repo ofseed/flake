@@ -10,6 +10,7 @@
   lib,
   pkgs,
   nixos-wsl,
+  ghostty,
   ...
 }:
 
@@ -43,6 +44,7 @@
     systemPackages = with pkgs; [
       luajit
       luajitPackages.luarocks
+      ghostty.packages.x86_64-linux.default
     ];
   };
 
