@@ -80,6 +80,7 @@
     ".terminfo".source = dotfiles/terminfo;
     ".config/lf/icons".source = dotfiles/config/lf/icons;
     ".config/fish/functions/lfcd.fish".source = dotfiles/config/fish/functions/lfcd.fish;
+    ".config/ghostty/config".source = dotfiles/config/ghostty/config;
   };
 
   # Home Manager can also manage your environment variables through
