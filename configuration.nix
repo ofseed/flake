@@ -48,6 +48,7 @@
     systemPackages = with pkgs; [
       luajit
       luajitPackages.luarocks
+      adwaita-icon-theme
       ghostty.packages.x86_64-linux.default
     ];
   };
