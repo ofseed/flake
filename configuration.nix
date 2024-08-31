@@ -20,8 +20,12 @@
     nixos-wsl.nixosModules.default
   ];
 
-  wsl.enable = true;
-  wsl.defaultUser = "ofseed";
+  wsl = {
+    enable = true;
+    defaultUser = "ofseed";
+    interop.includePath = false;
+    startMenuLaunchers = true;
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
