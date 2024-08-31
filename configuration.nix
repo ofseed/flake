@@ -53,6 +53,9 @@
   };
 
   programs = {
+    dconf = {
+      enable = true;
+    };
     neovim = {
       enable = true;
       defaultEditor = true;
