@@ -1,0 +1,9 @@
+font-family = Cascadia Code
+font-feature = ss02
+
+command = fish --interactive
+
+theme = catppuccin-mocha
+
+window-height = 45
+window-width = 100
