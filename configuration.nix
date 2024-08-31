@@ -68,6 +68,12 @@
       rustup
       zig
 
+      # CLI
+      git
+      unzip
+      wget
+      wl-clipboard
+
       # GUI
       adwaita-icon-theme
       ghostty.packages.x86_64-linux.default
