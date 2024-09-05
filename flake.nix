@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of ofseed";
+  description = "Flake of ofseed";
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
