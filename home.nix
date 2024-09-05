@@ -50,16 +50,12 @@
     luajitPackages.magick
 
     # Fonts
+    cascadia-code
     (nerdfonts.override {
       fonts = [
-        "CascadiaCode"
         "NerdFontsSymbolsOnly"
       ];
     })
-    cascadia-code
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-color-emoji
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

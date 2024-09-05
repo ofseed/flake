@@ -69,6 +69,20 @@
     ];
   };
 
+  fonts = {
+    packages = with pkgs; [
+      noto-fonts-cjk
+      noto-fonts-cjk-serif
+      noto-fonts-color-emoji
+      cascadia-code
+      (nerdfonts.override {
+        fonts = [
+          "NerdFontsSymbolsOnly"
+        ];
+      })
+    ];
+  };
+
   environment = {
     systemPackages = with pkgs; [
       # Toolchains
