@@ -74,6 +74,7 @@
       noto-fonts-cjk
       noto-fonts-cjk-serif
       noto-fonts-color-emoji
+      noto-fonts-extra
       cascadia-code
       (nerdfonts.override {
         fonts = [
