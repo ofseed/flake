@@ -2,11 +2,11 @@
   "nodes": {
     "catppuccin": {
       "locked": {
-        "lastModified": 1724469296,
-        "narHash": "sha256-p3R4LUNk6gC+fTKRUm9ByXaoRIocnQMwVuJSIxECQ8o=",
+        "lastModified": 1725509983,
+        "narHash": "sha256-NHCgHVqumPraFJnLrkanoLDuhOoUHUvRhvp/RIHJR+A=",
         "owner": "catppuccin",
         "repo": "nix",
-        "rev": "874e668ddaf3687e8d38ccd0188a641ffefe1cfb",
+        "rev": "45745fe5960acaefef2b60f3455bcac6a0ca6bc9",
         "type": "github"
       },
       "original": {
@@ -76,11 +76,11 @@
         "zig": "zig"
       },
       "locked": {
-        "lastModified": 1725494315,
-        "narHash": "sha256-4qgbll0oyNXc877QqBwRAGQSU15++qzKCSVU9Os+QYM=",
+        "lastModified": 1725508619,
+        "narHash": "sha256-lUHgpQBLBu00kCl39xaSu+87oRw3S9ZA9veKPKBZP54=",
         "ref": "refs/heads/main",
-        "rev": "42b799e9a0080e2951ec0c869c153fae0124fd4b",
-        "revCount": 7194,
+        "rev": "2c48e86a8680a8e896d0e54c61336f6c132c12d1",
+        "revCount": 7196,
         "type": "git",
         "url": "ssh://git@github.com/ghostty-org/ghostty"
       },
