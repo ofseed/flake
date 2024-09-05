@@ -44,6 +44,17 @@
     };
   };
 
+  i18n = {
+    supportedLocales = [
+      "C.UTF-8/UTF-8"
+      "en_US.UTF-8/UTF-8"
+      "zh_CN.UTF-8/UTF-8"
+    ];
+    extraLocaleSettings = {
+      LANGUAGE = "zh_CN:zh:en_US:en";
+    };
+  };
+
   xdg.portal = {
     enable = true;
     config = {
