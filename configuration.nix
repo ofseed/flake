@@ -81,6 +81,18 @@
         ];
       })
     ];
+    fontconfig = {
+      enable = true;
+      defaultFonts = {
+        serif = [ "Noto Serif CJK SC" ];
+        sansSerif = [ "Noto Sans CJK SC" ];
+        emoji = [ "Noto Color Emoji" ];
+        monospace = [
+          "Cascadia Code"
+          "Symbols Nerd Font Mono"
+        ];
+      };
+    };
   };
 
   environment = {
