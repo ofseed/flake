@@ -27,6 +27,12 @@
     }@attrs:
     let
       system = "x86_64-linux";
+      # Specify your home configuration modules here, for example,
+      # the path to your home.nix.
+      homeManagerModules = [
+        ./home.nix
+        catppuccin.homeManagerModules.catppuccin
+      ];
     in
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -34,18 +40,17 @@
         specialArgs = attrs;
         modules = [
           ./configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.users.ofseed = {
+              imports = homeManagerModules;
+            };
+          }
         ];
       };
-      homeConfigurations."ofseed" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.ofseed = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-
-        # Specify your home configuration modules here, for example,
-        # the path to your home.nix.
-        modules = [
-          ./home.nix
-          catppuccin.homeManagerModules.catppuccin
-        ];
-
+        modules = homeManagerModules;
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
       };
