@@ -44,6 +44,8 @@
     };
   };
 
+  time.timeZone = "Asia/Shanghai";
+
   i18n = {
     supportedLocales = [
       "C.UTF-8/UTF-8"
