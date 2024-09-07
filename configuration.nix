@@ -110,9 +110,11 @@
       nodejs
       corepack
       python3
-      go
+      gcc
+      llvmPackages.clang-tools
       rustup
       zig
+      go
 
       # CLI
       git
