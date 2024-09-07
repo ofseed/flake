@@ -25,6 +25,7 @@
     defaultUser = "ofseed";
     interop.includePath = false;
     startMenuLaunchers = true;
+    useWindowsDriver = true;
   };
 
   # This value determines the NixOS release from which the default
@@ -97,6 +98,11 @@
   };
 
   environment = {
+    sessionVariables = {
+      LD_LIBRARY_PATH = [
+        "/run/opengl-driver/lib"
+      ];
+    };
     systemPackages = with pkgs; [
       # Toolchains
       luajit
