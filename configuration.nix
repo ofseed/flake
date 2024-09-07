@@ -121,6 +121,7 @@
       wl-clipboard
 
       # GUI
+      weston
       dconf-editor
       adwaita-icon-theme
       kitty
