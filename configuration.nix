@@ -23,7 +23,6 @@
   wsl = {
     enable = true;
     defaultUser = "ofseed";
-    interop.includePath = false;
     startMenuLaunchers = true;
     useWindowsDriver = true;
   };
@@ -117,6 +116,7 @@
       go
 
       # CLI
+      xdg-utils
       git
       unzip
       wget
