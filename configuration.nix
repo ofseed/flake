@@ -123,6 +123,7 @@
       # GUI
       dconf-editor
       adwaita-icon-theme
+      kitty
       ghostty.packages.x86_64-linux.default
       mpv
     ];
