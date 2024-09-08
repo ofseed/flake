@@ -38,7 +38,10 @@
   users.users.ofseed = {
     isNormalUser = true;
     description = "Yi Ming";
-    extraGroups = [ "wheel" ];
+    extraGroups = [
+      "wheel"
+      "docker"
+    ];
   };
 
   nix = {
@@ -73,6 +76,10 @@
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
     ];
+  };
+
+  virtualisation.docker = {
+    enable = true;
   };
 
   fonts = {
