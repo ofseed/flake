@@ -43,6 +43,7 @@
     # Programs
     nixd
     nixfmt-rfc-style
+    nvimpager
     unixtools.xxd
     lazydocker
 
@@ -93,6 +94,7 @@
   home.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
+    PAGER = "nvimpager";
   };
 
   home.shellAliases = {
