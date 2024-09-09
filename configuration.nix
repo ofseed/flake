@@ -42,6 +42,7 @@
       "wheel"
       "docker"
     ];
+    shell = pkgs.fish;
   };
 
   nix = {
@@ -150,6 +151,9 @@
       enable = true;
     };
     dconf = {
+      enable = true;
+    };
+    fish = {
       enable = true;
     };
     neovim = {
