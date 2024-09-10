@@ -121,6 +121,7 @@
     fish = {
       enable = true;
       shellInit = builtins.readFile ./dotfiles/config/fish/config.fish;
+      interactiveShellInit = builtins.readFile ./dotfiles/config/fish/interactive.fish;
     };
     starship = {
       enable = true;
