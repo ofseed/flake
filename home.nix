@@ -112,6 +112,9 @@
       "ghostty/config".source = ./xdg/config/ghostty/config;
       "git/config".text = lib.mkAfter (builtins.readFile ./xdg/config/git/git-pickaxe-aliases.gitconfig);
     };
+    dataFile = {
+      "fonts".source = ./xdg/data/fonts;
+    };
   };
 
   # Let Home Manager install and manage itself.
