@@ -5,6 +5,10 @@
     # Specify the source of Home Manager and Nixpkgs.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -22,6 +26,7 @@
       self,
       nixpkgs,
       home-manager,
+      nix-index-database,
       catppuccin,
       ...
     }@attrs:
@@ -31,6 +36,7 @@
       # the path to your home.nix.
       homeManagerModules = [
         ./home.nix
+        nix-index-database.hmModules.nix-index
         catppuccin.homeManagerModules.catppuccin
       ];
     in

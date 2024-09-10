@@ -112,6 +112,12 @@
   programs.home-manager.enable = true;
 
   programs = {
+    nix-index-database = {
+      comma = {
+        enable = true;
+      };
+    };
+
     fish = {
       enable = true;
       shellInit = builtins.readFile ./dotfiles/config/fish/config.fish;
