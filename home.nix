@@ -75,9 +75,6 @@
 
     ".ideavimrc".source = dotfiles/ideavimrc;
     ".terminfo".source = dotfiles/terminfo;
-    ".config/lf/icons".source = dotfiles/config/lf/icons;
-    ".config/fish/functions/lfcd.fish".source = dotfiles/config/fish/functions/lfcd.fish;
-    ".config/ghostty/config".source = dotfiles/config/ghostty/config;
   };
 
   # Home Manager can also manage your environment variables through
@@ -108,6 +105,15 @@
     };
   };
 
+  xdg = {
+    configFile = {
+      "lf/icons".source = ./xdg/config/lf/icons;
+      "fish/functions/lfcd.fish".source = ./xdg/config/fish/functions/lfcd.fish;
+      "ghostty/config".source = ./xdg/config/ghostty/config;
+      "git/config".text = lib.mkAfter (builtins.readFile ./xdg/config/git/git-pickaxe-aliases.gitconfig);
+    };
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -120,13 +126,13 @@
 
     fish = {
       enable = true;
-      shellInit = builtins.readFile ./dotfiles/config/fish/config.fish;
-      interactiveShellInit = builtins.readFile ./dotfiles/config/fish/interactive.fish;
+      shellInit = builtins.readFile ./xdg/config/fish/config.fish;
+      interactiveShellInit = builtins.readFile ./xdg/config/fish/interactive.fish;
     };
     starship = {
       enable = true;
       catppuccin.enable = true;
-      settings = builtins.fromTOML (builtins.readFile ./dotfiles/config/starship.toml);
+      settings = builtins.fromTOML (builtins.readFile ./xdg/config/starship.toml);
     };
     atuin = {
       enable = true;
@@ -140,7 +146,7 @@
     };
     lf = {
       enable = true;
-      extraConfig = builtins.readFile ./dotfiles/config/lf/lfrc;
+      extraConfig = builtins.readFile ./xdg/config/lf/lfrc;
     };
     eza = {
       enable = true;
@@ -226,22 +232,18 @@
       font = {
         name = "Cascadia Code";
       };
-      extraConfig = builtins.readFile ./dotfiles/config/kitty/kitty.conf;
+      extraConfig = builtins.readFile ./xdg/config/kitty/kitty.conf;
     };
     wezterm = {
       enable = true;
       package = pkgs.nix;
-      extraConfig = builtins.readFile ./dotfiles/config/wezterm/wezterm.lua;
+      extraConfig = builtins.readFile ./xdg/config/wezterm/wezterm.lua;
     };
     alacritty = {
       enable = true;
       catppuccin.enable = true;
       package = pkgs.nix;
-      settings = builtins.fromTOML (builtins.readFile ./dotfiles/config/alacritty/alacritty.toml);
+      settings = builtins.fromTOML (builtins.readFile ./xdg/config/alacritty/alacritty.toml);
     };
   };
-
-  xdg.configFile."git/config".text = lib.mkAfter (
-    builtins.readFile ./dotfiles/config/git/git-pickaxe-aliases.gitconfig
-  );
 }
