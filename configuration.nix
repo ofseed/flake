@@ -65,6 +65,15 @@
     extraLocaleSettings = {
       LANGUAGE = "zh_CN:zh:en_US:en";
     };
+    inputMethod = {
+      enable = true;
+      type = "fcitx5";
+      fcitx5 = {
+        addons = with pkgs; [
+          fcitx5-rime
+        ];
+      };
+    };
   };
 
   xdg.portal = {
