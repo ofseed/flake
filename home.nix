@@ -45,6 +45,7 @@
     nixfmt-rfc-style
     nvimpager
     unixtools.xxd
+    tree-sitter
     lazydocker
 
     # Libraries
