@@ -114,7 +114,10 @@
       "git/config".text = lib.mkAfter (builtins.readFile ./xdg/config/git/git-pickaxe-aliases.gitconfig);
     };
     dataFile = {
-      "fonts".source = ./xdg/data/fonts;
+      "fonts" = {
+        source = ./xdg/data/fonts;
+        recursive = true;
+      };
     };
   };
 
