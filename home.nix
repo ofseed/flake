@@ -112,6 +112,7 @@
       "fish/functions/lfcd.fish".source = ./xdg/config/fish/functions/lfcd.fish;
       "ghostty/config".source = ./xdg/config/ghostty/config;
       "git/config".text = lib.mkAfter (builtins.readFile ./xdg/config/git/git-pickaxe-aliases.gitconfig);
+      "nvimpager".source = ./xdg/config/nvimpager;
     };
     dataFile = {
       "fonts" = {
