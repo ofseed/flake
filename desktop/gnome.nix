@@ -10,6 +10,7 @@
     gnomeExtensions.appindicator
     gnomeExtensions.kimpanel
     gnomeExtensions.gsconnect
+    gnomeExtensions.blur-my-shell
     gnomeExtensions.paperwm
   ];
 }
