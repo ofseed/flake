@@ -10,5 +10,6 @@
     gnomeExtensions.appindicator
     gnomeExtensions.kimpanel
     gnomeExtensions.gsconnect
+    gnomeExtensions.paperwm
   ];
 }
