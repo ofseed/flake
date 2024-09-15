@@ -126,5 +126,15 @@
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
+
+    prime = {
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
+      # Make sure to use the correct Bus ID values for your system!
+      amdgpuBusId = "PCI:4:0:0";
+      nvidiaBusId = "PCI:1:0:0";
+    };
   };
 }
