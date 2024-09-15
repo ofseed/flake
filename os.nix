@@ -66,6 +66,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     gnomeExtensions.kimpanel
+    gnomeExtensions.gsconnect
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
