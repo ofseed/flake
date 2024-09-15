@@ -8,3 +8,5 @@ theme = catppuccin-mocha
 window-padding-balance = true
 window-height = 45
 window-width = 100
+
+resize-overlay-position = bottom-right
