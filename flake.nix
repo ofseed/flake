@@ -45,6 +45,7 @@
         inherit system;
         specialArgs = attrs;
         modules = [
+          ./wsl.nix
           ./configuration.nix
           home-manager.nixosModules.home-manager
           {

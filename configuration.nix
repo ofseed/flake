@@ -2,31 +2,15 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-# NixOS-WSL specific options are documented on the NixOS-WSL repository:
-# https://github.com/nix-community/NixOS-WSL
-
 {
   config,
   lib,
   pkgs,
-  nixos-wsl,
   ghostty,
   ...
 }:
 
 {
-  imports = [
-    # include NixOS-WSL modules
-    nixos-wsl.nixosModules.default
-  ];
-
-  wsl = {
-    enable = true;
-    defaultUser = "ofseed";
-    startMenuLaunchers = true;
-    useWindowsDriver = true;
-  };
-
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It's perfectly fine and recommended to leave
@@ -76,18 +60,6 @@
     };
   };
 
-  xdg.portal = {
-    enable = true;
-    config = {
-      common = {
-        default = [ "gtk" ];
-      };
-    };
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-    ];
-  };
-
   virtualisation.docker = {
     enable = true;
   };
@@ -120,11 +92,6 @@
   };
 
   environment = {
-    sessionVariables = {
-      LD_LIBRARY_PATH = [
-        "/run/opengl-driver/lib"
-      ];
-    };
     systemPackages = with pkgs; [
       # Toolchains
       luajit
@@ -146,9 +113,7 @@
       wl-clipboard
 
       # GUI
-      weston
       dconf-editor
-      adwaita-icon-theme
       kitty
       ghostty.packages.x86_64-linux.default
       mpv
