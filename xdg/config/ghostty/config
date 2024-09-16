@@ -5,6 +5,16 @@ command = fish --interactive
 
 theme = catppuccin-mocha
 
+keybind = alt+one=unbind
+keybind = alt+two=unbind
+keybind = alt+three=unbind
+keybind = alt+four=unbind
+keybind = alt+five=unbind
+keybind = alt+six=unbind
+keybind = alt+seven=unbind
+keybind = alt+eight=unbind
+keybind = alt+nine=unbind
+
 window-padding-balance = true
 window-height = 45
 window-width = 100
