@@ -70,11 +70,13 @@
       ibus = {
         engines = with pkgs.ibus-engines; [
           rime
+          mozc
         ];
       };
       fcitx5 = {
         addons = with pkgs; [
           fcitx5-rime
+          fcitx5-mozc
         ];
       };
     };
