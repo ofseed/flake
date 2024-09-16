@@ -18,6 +18,10 @@
     type = "ibus";
   };
 
+  xdg.mime.defaultApplications = {
+    "inode/directory" = "org.gnome.Nautilus.desktop";
+  };
+
   programs = {
     kdeconnect.package = pkgs.gnomeExtensions.gsconnect;
   };
