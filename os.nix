@@ -73,6 +73,9 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
+  programs = {
+    kdeconnect.enable = true;
+  };
 
   # List services that you want to enable:
 

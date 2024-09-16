@@ -9,7 +9,6 @@
   environment.systemPackages = with pkgs; [
     gnomeExtensions.appindicator
     gnomeExtensions.kimpanel
-    gnomeExtensions.gsconnect
     gnomeExtensions.blur-my-shell
     gnomeExtensions.paperwm
   ];
@@ -17,5 +16,9 @@
   i18n.inputMethod = {
     enable = true;
     type = "ibus";
+  };
+
+  programs = {
+    kdeconnect.package = pkgs.gnomeExtensions.gsconnect;
   };
 }
