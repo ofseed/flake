@@ -70,8 +70,11 @@
       LC_TIME = "zh_CN.UTF-8";
     };
     inputMethod = {
-      enable = true;
-      type = "fcitx5";
+      ibus = {
+        engines = with pkgs.ibus-engines; [
+          rime
+        ];
+      };
       fcitx5 = {
         addons = with pkgs; [
           fcitx5-rime
