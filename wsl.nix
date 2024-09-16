@@ -20,6 +20,11 @@
     defaultUser = "ofseed";
     startMenuLaunchers = true;
     useWindowsDriver = true;
+    wslConf = {
+      network = {
+        hostname = "nixos-wsl";
+      };
+    };
   };
 
   xdg.portal = {

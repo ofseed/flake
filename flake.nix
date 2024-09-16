@@ -41,20 +41,35 @@
       ];
     in
     {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = attrs;
-        modules = [
-          ./os.nix
-          # ./wsl.nix
-          ./configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.users.ofseed = {
-              imports = homeManagerModules;
-            };
-          }
-        ];
+      nixosConfigurations = {
+        nixos = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = attrs;
+          modules = [
+            ./os.nix
+            ./configuration.nix
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.users.ofseed = {
+                imports = homeManagerModules;
+              };
+            }
+          ];
+        };
+        nixos-wsl = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = attrs;
+          modules = [
+            ./wsl.nix
+            ./configuration.nix
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.users.ofseed = {
+                imports = homeManagerModules;
+              };
+            }
+          ];
+        };
       };
       homeConfigurations.ofseed = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
