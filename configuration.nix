@@ -29,9 +29,6 @@
       "docker"
     ];
     shell = pkgs.fish;
-    packages = with pkgs; [
-    #  thunderbird
-    ];
   };
 
   nix = {
