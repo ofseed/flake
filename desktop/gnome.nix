@@ -14,9 +14,14 @@
     '';
   };
 
+  environment.gnome.excludePackages = with pkgs; [
+    evince # Replace with papers
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    papers # Next generation of GNOME's default document viewer
     nautilus-python
 
     gnomeExtensions.appindicator
@@ -35,6 +40,10 @@
 
   xdg.mime.defaultApplications = {
     "inode/directory" = "org.gnome.Nautilus.desktop";
+    "application/pdf" = "org.gnome.Papers.desktop";
+    "image/jpeg" = "org.gnome.Loupe.desktop";
+    "image/webp" = "org.gnome.Loupe.desktop";
+    "image/png" = "org.gnome.Loupe.desktop";
   };
 
   programs = {
