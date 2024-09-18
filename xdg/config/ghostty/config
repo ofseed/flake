@@ -3,6 +3,8 @@ font-feature = ss02
 
 command = fish --interactive
 
+adjust-underline-position = 20%
+
 theme = catppuccin-mocha
 
 keybind = alt+one=unbind
