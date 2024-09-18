@@ -86,6 +86,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     chromium
+    jetbrains-toolbox
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
