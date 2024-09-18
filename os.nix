@@ -80,14 +80,21 @@
   # services.xserver.libinput.enable = true;
 
   # Install firefox.
-  programs.firefox.enable = true;
+  # programs.firefox.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     chromium
     jetbrains-toolbox
+    microsoft-edge
   ];
+
+  xdg.mime.defaultApplications = {
+    "x-scheme-handler/http" = "microsoft-edge.desktop";
+    "x-scheme-handler/https" = "microsoft-edge.desktop";
+    "text/html" = "microsoft-edge.desktop";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
