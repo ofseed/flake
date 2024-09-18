@@ -86,7 +86,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     chromium
-    obsidian
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
