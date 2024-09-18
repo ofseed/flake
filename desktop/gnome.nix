@@ -12,6 +12,9 @@
     gnomeExtensions.appindicator
     gnomeExtensions.kimpanel
     gnomeExtensions.blur-my-shell
+
+    # For match the workspace behavior of PapeWM
+    gnomeExtensions.vertical-workspaces
     gnomeExtensions.paperwm
   ];
 
