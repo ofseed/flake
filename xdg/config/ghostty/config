@@ -9,16 +9,6 @@ theme = catppuccin-mocha
 
 mouse-hide-while-typing = true
 
-keybind = alt+one=unbind
-keybind = alt+two=unbind
-keybind = alt+three=unbind
-keybind = alt+four=unbind
-keybind = alt+five=unbind
-keybind = alt+six=unbind
-keybind = alt+seven=unbind
-keybind = alt+eight=unbind
-keybind = alt+nine=unbind
-
 window-padding-balance = true
 window-padding-color = extend
 window-height = 45
