@@ -18,6 +18,7 @@ keybind = alt+eight=unbind
 keybind = alt+nine=unbind
 
 window-padding-balance = true
+window-padding-color = extend
 window-height = 45
 window-width = 100
 
