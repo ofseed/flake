@@ -12,6 +12,9 @@
   ];
 
   boot = {
+    # Use the latest kernel instead of the latest LTS.
+    kernelPackages = pkgs.linuxPackages_latest;
+
     # Bootloader.
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
