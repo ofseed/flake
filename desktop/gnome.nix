@@ -14,6 +14,9 @@
     '';
   };
 
+  # GNOME will respect the PrefersNonDefaultGPU property in the desktop entry.
+  services.switcherooControl.enable = true;
+
   environment.gnome.excludePackages = with pkgs; [
     evince # Replace with papers
   ];
