@@ -9,6 +9,9 @@
   nixpkgs.overlays = [
     (self: super: {
       mpv = super.mpv.override {
+        scripts = with pkgs.mpvScripts; [
+          mpris
+        ];
         extraMakeWrapperArgs = [
           # nvidia prime render offload
           "--set"
