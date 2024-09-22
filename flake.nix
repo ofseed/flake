@@ -32,6 +32,7 @@
     }@attrs:
     let
       system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
       # Specify your home configuration modules here, for example,
       # the path to your home.nix.
       homeManagerModules = [
@@ -73,11 +74,11 @@
         };
       };
       homeConfigurations.ofseed = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
+        inherit pkgs;
         modules = homeManagerModules;
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
       };
-      formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt-rfc-style;
+      formatter.${system} = pkgs.nixfmt-rfc-style;
     };
 }
