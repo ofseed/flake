@@ -48,6 +48,7 @@
           modules = [
             ./os.nix
             ./configuration.nix
+            (import ./overlays)
             home-manager.nixosModules.home-manager
             {
               home-manager.users.ofseed = {
