@@ -137,6 +137,7 @@
       llvmPackages.clang-tools
       rustup
       zig
+      bun
       go
 
       # CLI
