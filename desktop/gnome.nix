@@ -18,7 +18,7 @@
     nautilus-python
 
     gnomeExtensions.appindicator
-    gnomeExtensions.kimpanel
+    gnomeExtensions.no-overview
     gnomeExtensions.blur-my-shell
 
     # For match the workspace behavior of PapeWM
