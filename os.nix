@@ -97,6 +97,10 @@
     "x-scheme-handler/http" = "microsoft-edge.desktop";
     "x-scheme-handler/https" = "microsoft-edge.desktop";
     "text/html" = "microsoft-edge.desktop";
+    "text/plain" = "nvim.desktop";
+    "application/json" = "nvim.desktop";
+    "application/x-docbook+xml" = "nvim.desktop";
+    "application/x-yaml" = "nvim.desktop";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
