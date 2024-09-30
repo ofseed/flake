@@ -75,6 +75,7 @@
         ];
       };
       fcitx5 = {
+        waylandFrontend = true;
         addons = with pkgs; [
           fcitx5-rime
           fcitx5-mozc
