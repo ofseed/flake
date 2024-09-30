@@ -9,6 +9,8 @@ theme = catppuccin-mocha
 
 mouse-hide-while-typing = true
 
+keybind = ctrl+shift+\=toggle_tab_overview
+
 window-padding-balance = true
 window-padding-color = extend
 window-height = 45
