@@ -122,6 +122,8 @@
     };
   };
 
+  catppuccin.enable = true;
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -139,7 +141,6 @@
     };
     starship = {
       enable = true;
-      catppuccin.enable = true;
       settings = builtins.fromTOML (builtins.readFile ./xdg/config/starship.toml);
     };
     atuin = {
@@ -150,7 +151,6 @@
     };
     bat = {
       enable = true;
-      catppuccin.enable = true;
     };
     lf = {
       enable = true;
@@ -163,7 +163,6 @@
     };
     btop = {
       enable = true;
-      catppuccin.enable = true;
       settings = {
         vim_keys = true;
       };
@@ -173,7 +172,6 @@
     };
     fzf = {
       enable = true;
-      catppuccin.enable = true;
     };
     ripgrep = {
       enable = true;
@@ -206,7 +204,6 @@
       };
       delta = {
         enable = true;
-        catppuccin.enable = true;
         options = {
           syntax-theme = "catppuccin";
         };
@@ -217,11 +214,9 @@
     };
     gh-dash = {
       enable = true;
-      catppuccin.enable = true;
     };
     lazygit = {
       enable = true;
-      catppuccin.enable = true;
       settings = {
         gui = {
           nerdFontsVersion = "3";
@@ -239,7 +234,6 @@
 
     kitty = {
       package = pkgs.nix;
-      catppuccin.enable = true;
       enable = true;
       font = {
         name = "Cascadia Code";
@@ -253,7 +247,6 @@
     };
     alacritty = {
       enable = true;
-      catppuccin.enable = true;
       package = pkgs.nix;
       settings = builtins.fromTOML (builtins.readFile ./xdg/config/alacritty/alacritty.toml);
     };
