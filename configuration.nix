@@ -136,6 +136,7 @@
       corepack
       python3
       gcc
+      gnumake
       llvmPackages.clang-tools
       rustup
       zig

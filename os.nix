@@ -94,6 +94,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     chromium
+    vscode.fhs
     jetbrains-toolbox
     microsoft-edge
   ];
