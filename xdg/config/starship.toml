@@ -21,6 +21,9 @@ symbol = " "
 [dart]
 symbol = " "
 
+[direnv]
+disabled = false
+
 [directory]
 read_only = " 󰌾"
 
