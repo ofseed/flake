@@ -34,6 +34,7 @@
   xdg.mime.defaultApplications = {
     "inode/directory" = "org.gnome.Nautilus.desktop";
     "application/pdf" = "org.gnome.Papers.desktop";
+    "application/zip" = "org.gnome.FileRoller.desktop";
     "image/jpeg" = "org.gnome.Loupe.desktop";
     "image/webp" = "org.gnome.Loupe.desktop";
     "image/png" = "org.gnome.Loupe.desktop";
