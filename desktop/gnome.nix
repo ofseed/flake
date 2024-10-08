@@ -13,18 +13,24 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    papers # Next generation of GNOME's default document viewer
-    nautilus-python
+  environment.systemPackages =
+    with pkgs;
+    [
+      papers # Next generation of GNOME's default document viewer
+      nautilus-python
+    ]
+    ++ (with pkgs.gnomeExtensions; [
+      # The must-have extension
+      appindicator
 
-    gnomeExtensions.appindicator
-    gnomeExtensions.no-overview
-    gnomeExtensions.blur-my-shell
+      # For better UI experience
+      no-overview
+      blur-my-shell
 
-    # For match the workspace behavior of PapeWM
-    gnomeExtensions.vertical-workspaces
-    gnomeExtensions.paperwm
-  ];
+      # For match the workspace behavior of PapeWM
+      vertical-workspaces
+      paperwm
+    ]);
 
   i18n.inputMethod = {
     enable = true;
