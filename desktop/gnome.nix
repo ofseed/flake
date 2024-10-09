@@ -9,6 +9,7 @@
 
   environment.gnome.excludePackages = with pkgs; [
     evince # Replace with papers
+    gnome-console # Better off without it
   ];
 
   # List packages installed in system profile. To search, run:
