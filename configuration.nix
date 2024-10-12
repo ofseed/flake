@@ -149,6 +149,7 @@
       unzip
       wget
       wl-clipboard
+      gdb
 
       # GUI
       dconf-editor
