@@ -41,6 +41,7 @@
     # '')
 
     # Programs
+    cachix
     nixd
     nixfmt-rfc-style
     nvimpager
