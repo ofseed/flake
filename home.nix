@@ -184,6 +184,10 @@
       enable = true;
       nix-direnv.enable = true;
     };
+    yt-dlp = {
+      enable = true;
+      extraConfig = builtins.readFile ./xdg/config/yt-dlp/config;
+    };
 
     git = {
       enable = true;
