@@ -10,6 +10,7 @@
     ./hardware-configuration.nix
     ./desktop/gnome.nix
     # ./desktop/plasma.nix
+    # ./desktop/niri.nix
   ];
 
   boot = {
