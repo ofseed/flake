@@ -28,6 +28,9 @@
       no-overview
       blur-my-shell
 
+      # For extending the functionalities
+      quake-terminal
+
       # For match the workspace behavior of PapeWM
       vertical-workspaces
       paperwm
