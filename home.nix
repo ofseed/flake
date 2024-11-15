@@ -203,6 +203,9 @@
         init = {
           defaultBranch = "main";
         };
+        checkout = {
+          defaultRemote = "origin";
+        };
         push = {
           autoSetupRemote = true;
         };
