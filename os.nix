@@ -15,7 +15,7 @@
 
   boot = {
     # Use the latest kernel instead of the latest LTS.
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_6_11;
 
     # Bootloader.
     loader.systemd-boot.enable = true;
