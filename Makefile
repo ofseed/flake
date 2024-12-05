@@ -3,3 +3,6 @@ all:
 
 install:
 	nixos-rebuild switch
+
+boot:
+	nixos-rebuild boot
