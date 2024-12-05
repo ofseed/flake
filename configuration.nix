@@ -108,11 +108,7 @@
       noto-fonts-color-emoji
       noto-fonts-extra
       cascadia-code
-      (nerdfonts.override {
-        fonts = [
-          "NerdFontsSymbolsOnly"
-        ];
-      })
+      nerd-fonts.symbols-only
     ];
     fontconfig = {
       enable = true;
