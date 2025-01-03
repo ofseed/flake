@@ -15,10 +15,6 @@
     };
 
     catppuccin.url = "github:catppuccin/nix";
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
-      inputs.nixpkgs-stable.follows = "nixpkgs";
-    };
   };
 
   outputs =

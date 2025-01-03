@@ -6,7 +6,6 @@
   config,
   lib,
   pkgs,
-  ghostty,
   ...
 }:
 
@@ -153,7 +152,7 @@
       # GUI
       dconf-editor
       kitty
-      ghostty.packages.x86_64-linux.default
+      ghostty
       mpv
     ];
   };
